@@ -60,9 +60,9 @@ source ~/.bash_profile
 
 # Install libmp3lame
 cd ~/ffmpeg_sources
-curl -L -O http://downloads.sourceforge.net/project/lame/lame/3.99/lame-3.99.5.tar.gz
-tar xzvf lame-3.99.5.tar.gz
-cd lame-3.99.5
+curl -L -O https://sourceforge.net/projects/lame/files/lame/3.100/lame-3.100.tar.gz
+tar xzvf lame-3.100.tar.gz
+cd lame-3.100
 ./configure --prefix="$HOME/ffmpeg_build" --bindir="$HOME/bin" --disable-shared --enable-nasm
 make
 make install
@@ -82,9 +82,9 @@ source ~/.bash_profile
 
 # Install libogg
 cd ~/ffmpeg_sources
-curl -O http://downloads.xiph.org/releases/ogg/libogg-1.3.2.tar.gz
-tar xzvf libogg-1.3.2.tar.gz
-cd libogg-1.3.2
+curl -O https://ftp.osuosl.org/pub/xiph/releases/ogg/libogg-1.3.3.tar.gz
+tar xzvf libogg-1.3.3.tar.gz
+cd libogg-1.3.3
 ./configure --prefix="$HOME/ffmpeg_build" --disable-shared
 make
 make install
@@ -94,9 +94,9 @@ source ~/.bash_profile
 
 # Install libvorbis
 cd ~/ffmpeg_sources
-curl -O http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.4.tar.gz
-tar xzvf libvorbis-1.3.4.tar.gz
-cd libvorbis-1.3.4
+curl -O https://ftp.osuosl.org/pub/xiph/releases/vorbis/libvorbis-1.3.6.tar.gz
+tar xzvf libvorbis-1.3.6.tar.gz
+cd libvorbis-1.3.6
 ./configure --prefix="$HOME/ffmpeg_build" --with-ogg="$HOME/ffmpeg_build" --disable-shared
 make
 make install

@@ -121,7 +121,8 @@ cd ~/ffmpeg_sources
 git clone --depth 1 https://chromium.googlesource.com/webm/libvpx.git
 cd libvpx
 ./configure --prefix="$HOME/ffmpeg_build" --disable-examples  --as=yasm
-PATH="$HOME/bin:$PATH" make
+PATH="$HOME/bin:$PATH"
+make
 make install
 make distclean
 source ~/.bash_profile
